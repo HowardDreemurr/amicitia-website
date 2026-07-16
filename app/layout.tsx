@@ -19,22 +19,22 @@ const body = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://amicitia.uk"),
-  title: "Amicitia — Social · Maps · Computer Vision",
+  title: "Amicitia — Software that does good, or is just plain fun",
   description:
-    "Amicitia Limited is a UK software studio building social, mapping, and computer-vision products. Makers of CatApp.",
+    "Amicitia Limited is a UK software studio that takes projects from concept to completion — building things that do good, or are just plain fun. Makers of Meow Map.",
   keywords: [
     "Amicitia",
     "Amicitia Limited",
-    "social software",
-    "mapping",
-    "computer vision",
-    "CatApp",
+    "software studio",
+    "app development",
+    "product design",
+    "Meow Map",
     "United Kingdom",
   ],
   openGraph: {
-    title: "Amicitia — Social · Maps · Computer Vision",
+    title: "Amicitia — Software that does good, or is just plain fun",
     description:
-      "A UK software studio building social, mapping, and computer-vision products.",
+      "A UK software studio taking projects from concept to completion. Makers of Meow Map.",
     url: "https://amicitia.uk",
     siteName: "Amicitia Limited",
     locale: "en_GB",

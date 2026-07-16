@@ -1,4 +1,4 @@
-// A recreation of CatApp's signature "living map" view, on-brand with
+// A recreation of Meow Map's signature "living map" view, on-brand with
 // catapp.uk (warm map, cat-face pins, rarity card). Pure markup — no binary asset.
 
 const PINS = [
@@ -9,7 +9,7 @@ const PINS = [
   { cat: "😺", top: "68%", left: "60%" },
 ];
 
-export default function CatAppMock({ small = false }: { small?: boolean }) {
+export default function MeowMapMock({ small = false }: { small?: boolean }) {
   return (
     <div className={`mock${small ? " mock-sm" : ""}`} aria-hidden="true">
       <div className="phone">

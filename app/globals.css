@@ -201,261 +201,58 @@ main {
   margin-bottom: clamp(1.5rem, 3vh, 2.2rem);
 }
 
-/* What we build */
-.build {
+/* Concept to completion */
+.how {
   padding: clamp(2.5rem, 6vh, 4rem) 0;
 }
-.cards {
+.how-lead {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  color: #6f635c;
+  max-width: 40rem;
+  margin: -0.75rem 0 clamp(1.5rem, 3vh, 2.2rem);
+}
+.steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.1rem;
 }
 @media (max-width: 760px) {
-  .cards {
+  .steps {
     grid-template-columns: 1fr;
   }
 }
-.card {
+.step {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 20px;
-  padding: 1.1rem 1.1rem 1.6rem;
+  padding: 1.5rem 1.6rem 1.7rem;
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
-.card:hover {
+.step:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 34px -22px rgba(45, 36, 32, 0.35);
   border-color: #e2d4c5;
 }
-.card:hover .cv-pin,
-.card:hover .node {
-  transform: scale(1.04);
+.step-num {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
 }
-.card-visual {
-  position: relative;
-  height: 158px;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  margin-bottom: 1.25rem;
-}
-.card-title {
+.step-title {
   font-family: var(--font-display), Georgia, serif;
   font-weight: 600;
   font-size: 1.35rem;
-  margin: 0 0.6rem 0.5rem;
+  margin-bottom: 0.5rem;
 }
-.card-body {
+.step-body {
   font-size: 0.96rem;
   color: #6f635c;
-  margin: 0 0.6rem;
 }
 
-/* ---- concept visuals (shared) ---- */
-.cv {
-  position: absolute;
-  inset: 0;
-}
-
-/* Social: connection graph */
-.cv-social {
-  background: radial-gradient(120% 100% at 50% 0%, #fbf3ea, #f4e7da);
-}
-.cv-lines {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-.cv-lines line {
-  stroke: #d8c4b1;
-  stroke-width: 1.5;
-}
-.cv-social .node {
-  position: absolute;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 600;
-  box-shadow: 0 5px 12px -5px rgba(45, 36, 32, 0.45);
-  transition: transform 0.25s;
-}
-.node-center {
-  top: 50%;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin: -23px 0 0 -23px;
-  background: var(--accent);
-  z-index: 2;
-}
-.cv-social .a0 {
-  top: 27%;
-  left: 22%;
-  width: 30px;
-  height: 30px;
-  margin: -15px 0 0 -15px;
-}
-.cv-social .a1 {
-  top: 25%;
-  left: 82%;
-  width: 30px;
-  height: 30px;
-  margin: -15px 0 0 -15px;
-}
-.cv-social .a2 {
-  top: 77%;
-  left: 20%;
-  width: 28px;
-  height: 28px;
-  margin: -14px 0 0 -14px;
-}
-.cv-social .a3 {
-  top: 77%;
-  left: 80%;
-  width: 28px;
-  height: 28px;
-  margin: -14px 0 0 -14px;
-}
-.cv-chip {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  color: #6f635c;
-  font-size: 0.64rem;
-  font-weight: 600;
-  padding: 0.2rem 0.55rem;
-  border-radius: 999px;
-  box-shadow: 0 5px 12px -6px rgba(45, 36, 32, 0.4);
-}
-
-/* Maps: mini live map */
-.cv-map {
-  background: var(--map);
-}
-.cv-streets {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-.cv-streets rect:not(.park),
-.cv-streets path {
-  fill: var(--street);
-  stroke: var(--street);
-  stroke-width: 8;
-}
-.cv-streets .park {
-  fill: var(--park);
-  stroke: none;
-}
-.cv-you {
-  position: absolute;
-  top: 48%;
-  left: 44%;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: #3f8a52;
-  box-shadow: 0 0 0 5px rgba(63, 138, 82, 0.22);
-}
-.cv-pin {
-  position: absolute;
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  margin: -15px 0 0 -15px;
-  background: #fff;
-  border-radius: 50%;
-  font-size: 15px;
-  box-shadow: 0 5px 11px -5px rgba(45, 36, 32, 0.45);
-  transition: transform 0.25s;
-}
-.cv-cluster {
-  position: absolute;
-  top: 76%;
-  left: 26%;
-  display: grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  margin: -13px 0 0 -13px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 50%;
-  font-size: 0.75rem;
-  font-weight: 700;
-  box-shadow: 0 5px 11px -5px rgba(181, 57, 32, 0.6);
-}
-
-/* Vision: detection box */
-.cv-vision {
-  display: grid;
-  place-items: center;
-  background: radial-gradient(110% 90% at 50% 30%, #fbf2e8, #efe1d2);
-}
-.cv-photo {
-  font-size: 68px;
-  line-height: 1;
-}
-.cv-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 96px;
-  height: 96px;
-  transform: translate(-50%, -46%);
-}
-.cv-box .c {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border: 2.5px solid var(--accent);
-}
-.cv-box .tl {
-  top: 0;
-  left: 0;
-  border-right: none;
-  border-bottom: none;
-}
-.cv-box .tr {
-  top: 0;
-  right: 0;
-  border-left: none;
-  border-bottom: none;
-}
-.cv-box .bl {
-  bottom: 0;
-  left: 0;
-  border-right: none;
-  border-top: none;
-}
-.cv-box .br {
-  bottom: 0;
-  right: 0;
-  border-left: none;
-  border-top: none;
-}
-.cv-label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 36px);
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.64rem;
-  font-weight: 600;
-  padding: 0.16rem 0.5rem;
-  border-radius: 6px;
-  white-space: nowrap;
-}
-
-/* Work / CatApp */
+/* Work / Meow Map */
 .work {
   padding: clamp(2.5rem, 6vh, 4rem) 0;
 }
@@ -542,7 +339,7 @@ main {
 }
 
 /* ------------------------------------------------------------------ *
- *  CatApp map mockup
+ *  Meow Map mockup
  * ------------------------------------------------------------------ */
 .mock {
   width: 100%;

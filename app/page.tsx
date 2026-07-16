@@ -1,24 +1,23 @@
 import Reveal from "./components/Reveal";
-import CatAppMock from "./components/CatAppMock";
-import Concept from "./components/Concept";
+import MeowMapMock from "./components/MeowMapMock";
 
 const EMAIL = "support@amicitia.uk";
 
-const FOCUS = [
+const STEPS = [
   {
-    kind: "social",
-    title: "Social",
-    body: "Profiles, feeds, and communities — the connective tissue that makes an app feel alive with people.",
+    n: "01",
+    title: "Concept",
+    body: "We shape the idea with you — what it is, who it's for, and the smallest version worth shipping.",
   },
   {
-    kind: "map",
-    title: "Maps",
-    body: "Location and place: live maps, discovery, and geodata that turn coordinates into something useful.",
+    n: "02",
+    title: "Build",
+    body: "Design and engineering under one roof: interfaces, backends, maps, machine learning — whatever the product needs.",
   },
   {
-    kind: "vision",
-    title: "Computer Vision",
-    body: "On-device recognition and detection — software that understands an image from a single photo.",
+    n: "03",
+    title: "Completion",
+    body: "We ship it properly — app stores, launch, and the follow-through that keeps it alive after day one.",
   },
 ];
 
@@ -32,7 +31,7 @@ export default function Home() {
           Amicitia
         </a>
         <nav className="nav-links">
-          <a href="#build">What we build</a>
+          <a href="#how">How we work</a>
           <a href="#work">Work</a>
           <a className="nav-btn" href={`mailto:${EMAIL}`}>
             Contact
@@ -46,12 +45,13 @@ export default function Home() {
           Amicitia Limited · UK Software Studio
         </Reveal>
         <Reveal as="h1" className="hero-title" delay={60}>
-          We build apps worth{" "}
-          <span className="hl">opening every day</span>.
+          We build things that do <span className="hl">good</span> — or are
+          just plain <span className="hl">fun</span>.
         </Reveal>
         <Reveal as="p" className="hero-sub" delay={120}>
-          A UK studio that designs and ships software end to end — from the first
-          sketch to the App Store.
+          A UK studio that takes projects from first concept to completion —
+          as long as they make the world a little better, or a little more
+          fun.
         </Reveal>
         <Reveal className="hero-actions" delay={180}>
           <a className="btn" href={`mailto:${EMAIL}`}>
@@ -63,37 +63,40 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* What we build */}
-      <section className="build" id="build">
+      {/* Concept to completion */}
+      <section className="how" id="how">
         <Reveal as="h2" className="section-title">
-          What we build
+          Concept to completion
         </Reveal>
-        <div className="cards">
-          {FOCUS.map((f, i) => (
-            <Reveal key={f.title} className="card" delay={i * 80}>
-              <div className="card-visual">
-                <Concept kind={f.kind} />
-              </div>
-              <h3 className="card-title">{f.title}</h3>
-              <p className="card-body">{f.body}</p>
+        <Reveal as="p" className="how-lead" delay={60}>
+          We don&apos;t specialise in a sector — we specialise in finishing.
+          If an idea does some good, or is simply good fun, we&apos;ll design
+          it, build it, and ship it.
+        </Reveal>
+        <div className="steps">
+          {STEPS.map((s, i) => (
+            <Reveal key={s.title} className="step" delay={i * 80}>
+              <span className="step-num">{s.n}</span>
+              <h3 className="step-title">{s.title}</h3>
+              <p className="step-body">{s.body}</p>
             </Reveal>
           ))}
         </div>
       </section>
 
-      {/* Work / CatApp */}
+      {/* Work / Meow Map */}
       <section className="work" id="work">
         <Reveal className="work-card">
           <div className="work-mock">
-            <CatAppMock small />
+            <MeowMapMock small />
           </div>
           <div className="work-info">
-            <span className="pill-live">● Live</span>
-            <h2 className="work-title">CatApp</h2>
+            <span className="pill-live">● Live · one from the fun column</span>
+            <h2 className="work-title">Meow Map</h2>
             <p className="work-desc">
               Turn a daily walk into a collecting game. Snap a photo, let AI
               identify the cat, and watch a live map of your neighbourhood fill
-              up. Our social, map, and computer-vision work, all in one app.
+              up.
             </p>
             <a
               className="btn"
@@ -101,7 +104,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit catapp.uk →
+              Visit Meow Map →
             </a>
           </div>
         </Reveal>
