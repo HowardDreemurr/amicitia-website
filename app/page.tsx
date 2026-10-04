@@ -33,9 +33,6 @@ export default function Home() {
         <nav className="nav-links">
           <a href="#how">How we work</a>
           <a href="#work">Work</a>
-          <a className="nav-btn" href={`mailto:${EMAIL}`}>
-            Contact
-          </a>
         </nav>
       </header>
 
