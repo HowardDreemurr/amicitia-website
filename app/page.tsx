@@ -28,11 +28,6 @@ export default function Home() {
           A small UK studio making apps that leave the world a little better,
           or a little more fun. Our first, Meow Map, is live now.
         </Reveal>
-        <Reveal className="hero-actions" delay={180}>
-          <a className="btn" href="#work">
-            Meet Meow Map
-          </a>
-        </Reveal>
       </section>
 
       {/* Work / Meow Map */}
