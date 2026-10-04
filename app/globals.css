@@ -165,81 +165,6 @@ main {
   background: var(--accent-soft);
   transform: translateY(-2px);
 }
-.btn-ghost {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.8rem 1.4rem;
-  border-radius: 11px;
-  border: 1px solid var(--line);
-  background: var(--card);
-  font-size: 0.96rem;
-  font-weight: 500;
-  transition: border-color 0.2s, transform 0.2s;
-}
-.btn-ghost:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-/* Section title */
-.section-title {
-  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
-  font-weight: 600;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  letter-spacing: -0.02em;
-  margin-bottom: clamp(1.5rem, 3vh, 2.2rem);
-}
-
-/* Concept to completion */
-.how {
-  padding: clamp(2.5rem, 6vh, 4rem) 0;
-}
-.how-lead {
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
-  color: #6f635c;
-  max-width: 40rem;
-  margin: -0.75rem 0 clamp(1.5rem, 3vh, 2.2rem);
-}
-.steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.1rem;
-}
-@media (max-width: 760px) {
-  .steps {
-    grid-template-columns: 1fr;
-  }
-}
-.step {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 1.5rem 1.6rem 1.7rem;
-  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-}
-.step:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 34px -22px rgba(45, 36, 32, 0.35);
-  border-color: #e2d4c5;
-}
-.step-num {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: var(--accent);
-  margin-bottom: 0.6rem;
-}
-.step-title {
-  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
-  font-weight: 600;
-  font-size: 1.35rem;
-  margin-bottom: 0.5rem;
-}
-.step-body {
-  font-size: 0.96rem;
-  color: #6f635c;
-}
 
 /* Work / Meow Map */
 .work {
@@ -285,33 +210,6 @@ main {
   color: #6f635c;
   max-width: 32rem;
   margin-bottom: 1.5rem;
-}
-
-/* Contact */
-.contact {
-  text-align: center;
-  padding: clamp(3.5rem, 9vh, 6.5rem) 0;
-}
-.contact-title {
-  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
-  font-weight: 600;
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  letter-spacing: -0.025em;
-  margin-bottom: 1.4rem;
-}
-.contact-mail {
-  display: inline-block;
-  font-size: clamp(1.05rem, 2vw, 1.4rem);
-  font-weight: 500;
-  color: #fff;
-  background: var(--accent);
-  padding: 0.85rem 1.7rem;
-  border-radius: 12px;
-  transition: background 0.2s, transform 0.2s;
-}
-.contact-mail:hover {
-  background: var(--accent-soft);
-  transform: translateY(-2px);
 }
 
 /* Footer */

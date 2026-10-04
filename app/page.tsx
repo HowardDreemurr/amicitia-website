@@ -1,26 +1,6 @@
 import Reveal from "./components/Reveal";
 import MeowMapShowcase from "./components/MeowMapShowcase";
 
-const EMAIL = "support@amicitia.uk";
-
-const STEPS = [
-  {
-    n: "01",
-    title: "Concept",
-    body: "We shape the idea with you: what it is, who it's for, and the smallest version worth shipping.",
-  },
-  {
-    n: "02",
-    title: "Build",
-    body: "Design and engineering under one roof: interfaces, backends, maps, machine learning, whatever the product needs.",
-  },
-  {
-    n: "03",
-    title: "Completion",
-    body: "We ship it properly: app stores, launch, and the follow-through that keeps it alive after day one.",
-  },
-];
-
 export default function Home() {
   return (
     <main>
@@ -31,8 +11,7 @@ export default function Home() {
           Amicitia
         </a>
         <nav className="nav-links">
-          <a href="#how">How we work</a>
-          <a href="#work">Work</a>
+          <a href="#work">Meow Map</a>
         </nav>
       </header>
 
@@ -46,39 +25,14 @@ export default function Home() {
           just plain <span className="hl">fun</span>.
         </Reveal>
         <Reveal as="p" className="hero-sub" delay={120}>
-          A UK studio that takes projects from first concept to completion,
-          as long as they make the world a little better, or a little more
-          fun.
+          A small UK studio making apps that leave the world a little better,
+          or a little more fun. Our first, Meow Map, is live now.
         </Reveal>
         <Reveal className="hero-actions" delay={180}>
-          <a className="btn" href={`mailto:${EMAIL}`}>
-            Get in touch
-          </a>
-          <a className="btn-ghost" href="#work">
-            See our work
+          <a className="btn" href="#work">
+            Meet Meow Map
           </a>
         </Reveal>
-      </section>
-
-      {/* Concept to completion */}
-      <section className="how" id="how">
-        <Reveal as="h2" className="section-title">
-          Concept to completion
-        </Reveal>
-        <Reveal as="p" className="how-lead" delay={60}>
-          We don&apos;t specialise in a sector. We specialise in finishing.
-          If an idea does some good, or is simply good fun, we&apos;ll design
-          it, build it, and ship it.
-        </Reveal>
-        <div className="steps">
-          {STEPS.map((s, i) => (
-            <Reveal key={s.title} className="step" delay={i * 80}>
-              <span className="step-num">{s.n}</span>
-              <h3 className="step-title">{s.title}</h3>
-              <p className="step-body">{s.body}</p>
-            </Reveal>
-          ))}
-        </div>
       </section>
 
       {/* Work / Meow Map */}
@@ -104,18 +58,6 @@ export default function Home() {
               Visit Meow Map →
             </a>
           </div>
-        </Reveal>
-      </section>
-
-      {/* Contact */}
-      <section className="contact" id="contact">
-        <Reveal>
-          <h2 className="contact-title">
-            Have an idea? <span className="hl">Let&apos;s build it.</span>
-          </h2>
-          <a className="contact-mail" href={`mailto:${EMAIL}`}>
-            {EMAIL}
-          </a>
         </Reveal>
       </section>
 

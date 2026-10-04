@@ -1,7 +1,7 @@
 # Amicitia Limited — Landing Page
 
 The marketing site for **Amicitia Limited** ([amicitia.uk](https://amicitia.uk)) — a UK
-studio that takes projects from concept to completion, building things that **do good**
+studio building apps that **do good**
 or are **just plain fun**. Built with Next.js and exported to fully static HTML so it
 can be hosted on GitHub Pages.
 
@@ -47,5 +47,4 @@ A     185.199.111.153
 
 ## Editing content
 
-All copy lives in `app/page.tsx` — the contact email, the concept-to-completion
-steps, and the Meow Map showcase. Styling is in `app/globals.css`.
+All copy lives in `app/page.tsx`: the hero and the Meow Map showcase. Styling is in `app/globals.css`.
