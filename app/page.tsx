@@ -1,5 +1,5 @@
 import Reveal from "./components/Reveal";
-import MeowMapMock from "./components/MeowMapMock";
+import MeowMapShowcase from "./components/MeowMapShowcase";
 
 const EMAIL = "support@amicitia.uk";
 
@@ -88,7 +88,7 @@ export default function Home() {
       <section className="work" id="work">
         <Reveal className="work-card">
           <div className="work-mock">
-            <MeowMapMock small />
+            <MeowMapShowcase />
           </div>
           <div className="work-info">
             <span className="pill-live">● Live · one from the fun column</span>

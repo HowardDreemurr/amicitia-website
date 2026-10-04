@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import "./letter-alternates.css";
 import "./globals.css";
 
 const display = Fraunces({

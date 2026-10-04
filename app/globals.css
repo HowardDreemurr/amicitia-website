@@ -74,7 +74,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--font-display), Georgia, serif;
+  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -135,7 +135,7 @@ main {
   margin-bottom: 1.6rem;
 }
 .hero-title {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
   font-weight: 600;
   font-size: clamp(2.6rem, 6.5vw, 4.6rem);
   line-height: 1.04;
@@ -194,7 +194,7 @@ main {
 
 /* Section title */
 .section-title {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
   font-weight: 600;
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   letter-spacing: -0.02em;
@@ -242,7 +242,7 @@ main {
   margin-bottom: 0.6rem;
 }
 .step-title {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
   font-weight: 600;
   font-size: 1.35rem;
   margin-bottom: 0.5rem;
@@ -258,7 +258,7 @@ main {
 }
 .work-card {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
   gap: clamp(1.5rem, 4vw, 3.5rem);
   background: var(--card);
@@ -285,7 +285,7 @@ main {
   margin-bottom: 0.8rem;
 }
 .work-title {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
   font-weight: 600;
   font-size: clamp(2rem, 4.5vw, 2.8rem);
   letter-spacing: -0.02em;
@@ -304,7 +304,7 @@ main {
   padding: clamp(3.5rem, 9vh, 6.5rem) 0;
 }
 .contact-title {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: "Amicitia Letterforms", var(--font-display), Georgia, serif;
   font-weight: 600;
   font-size: clamp(2rem, 5vw, 3.2rem);
   letter-spacing: -0.025em;
@@ -336,185 +336,4 @@ main {
   border-top: 1px solid var(--line);
   font-size: 0.85rem;
   color: var(--muted);
-}
-
-/* ------------------------------------------------------------------ *
- *  Meow Map mockup
- * ------------------------------------------------------------------ */
-.mock {
-  width: 100%;
-  max-width: 290px;
-  filter: drop-shadow(0 28px 50px rgba(45, 36, 32, 0.22));
-}
-.mock-sm {
-  max-width: 250px;
-}
-.phone {
-  position: relative;
-  aspect-ratio: 290 / 590;
-  border-radius: 36px;
-  background: #1f1813;
-  padding: 9px;
-  transform: rotate(2deg);
-}
-.phone-notch {
-  position: absolute;
-  top: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 7px;
-  border-radius: 99px;
-  background: #1f1813;
-  z-index: 5;
-}
-.map {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 28px;
-  background: var(--map);
-  overflow: hidden;
-}
-.map-streets {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-.map-streets rect:not(.park),
-.map-streets path {
-  fill: var(--street);
-  stroke: var(--street);
-  stroke-width: 9;
-}
-.map-streets .park {
-  fill: var(--park);
-  stroke: none;
-}
-.map-search {
-  position: absolute;
-  top: 30px;
-  left: 14px;
-  right: 14px;
-  background: #fff;
-  border-radius: 999px;
-  padding: 0.5rem 0.9rem;
-  font-size: 0.72rem;
-  color: var(--muted);
-  box-shadow: 0 6px 14px -8px rgba(45, 36, 32, 0.35);
-  z-index: 3;
-}
-.you-dot {
-  position: absolute;
-  top: 44%;
-  left: 46%;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #3f8a52;
-  box-shadow: 0 0 0 5px rgba(63, 138, 82, 0.22);
-}
-.pin {
-  position: absolute;
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  margin: -17px 0 0 -17px;
-  background: #fff;
-  border-radius: 50%;
-  font-size: 18px;
-  box-shadow: 0 6px 12px -5px rgba(45, 36, 32, 0.4);
-}
-.cluster {
-  position: absolute;
-  top: 78%;
-  left: 18%;
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  margin: -15px 0 0 -15px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 50%;
-  font-size: 0.85rem;
-  font-weight: 700;
-  box-shadow: 0 6px 12px -5px rgba(181, 57, 32, 0.6);
-}
-.pill {
-  position: absolute;
-  top: 47%;
-  right: 10px;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: 12px;
-  padding: 0.45rem 0.7rem;
-  box-shadow: 0 8px 18px -8px rgba(45, 36, 32, 0.4);
-  z-index: 4;
-}
-.pill strong {
-  font-size: 0.74rem;
-  color: #7a3aa0;
-}
-.pill span {
-  font-size: 0.64rem;
-  color: var(--muted);
-}
-.findcard {
-  position: absolute;
-  bottom: 16px;
-  left: 14px;
-  right: 14px;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  background: #fff;
-  border-radius: 16px;
-  padding: 0.6rem 0.7rem;
-  box-shadow: 0 10px 22px -10px rgba(45, 36, 32, 0.45);
-  z-index: 4;
-}
-.findcard-face {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 11px;
-  background: var(--tint);
-  font-size: 22px;
-}
-.findcard-info {
-  flex: 1;
-}
-.findcard-row {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-bottom: 0.25rem;
-}
-.findcard-row strong {
-  font-size: 0.92rem;
-}
-.rare {
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: #fff;
-  background: #2f6fb0;
-  padding: 0.1rem 0.35rem;
-  border-radius: 5px;
-}
-.findcard-tags {
-  display: flex;
-  gap: 0.3rem;
-}
-.findcard-tags span {
-  font-size: 0.62rem;
-  color: #6f635c;
-  background: var(--tint);
-  padding: 0.12rem 0.45rem;
-  border-radius: 999px;
 }

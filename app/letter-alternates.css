@@ -1,0 +1,65 @@
+/* J/f/j refined from Fraunces; all other letters use the original font. */
+@font-face {
+  font-family: 'Amicitia Letterforms';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/amicitia-letterforms-normal-400.woff2') format('woff2');
+  unicode-range: U+004A, U+0066, U+006A;
+}
+@font-face {
+  font-family: 'Amicitia Letterforms';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/amicitia-letterforms-normal-500.woff2') format('woff2');
+  unicode-range: U+004A, U+0066, U+006A;
+}
+@font-face {
+  font-family: 'Amicitia Letterforms';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/amicitia-letterforms-normal-600.woff2') format('woff2');
+  unicode-range: U+004A, U+0066, U+006A;
+}
+@font-face {
+  font-family: 'Amicitia Letterforms';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/amicitia-letterforms-normal-700.woff2') format('woff2');
+  unicode-range: U+004A, U+0066, U+006A;
+}
+@font-face {
+  font-family: 'Amicitia Letterforms';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/amicitia-letterforms-italic-400.woff2') format('woff2');
+  unicode-range: U+004A, U+0066, U+006A;
+}
+@font-face {
+  font-family: 'Amicitia Letterforms';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/amicitia-letterforms-italic-500.woff2') format('woff2');
+  unicode-range: U+004A, U+0066, U+006A;
+}
+@font-face {
+  font-family: 'Amicitia Letterforms';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/amicitia-letterforms-italic-600.woff2') format('woff2');
+  unicode-range: U+004A, U+0066, U+006A;
+}
+@font-face {
+  font-family: 'Amicitia Letterforms';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/amicitia-letterforms-italic-700.woff2') format('woff2');
+  unicode-range: U+004A, U+0066, U+006A;
+}

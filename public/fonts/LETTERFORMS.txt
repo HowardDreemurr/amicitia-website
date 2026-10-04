@@ -1,0 +1,17 @@
+Amicitia Letterforms is a modified subset of Fraunces (J, f, j only).
+It retains original upper serifs and italic angle; upright f has a slightly wider advance for its repositioned head.
+J/j have simple bottom bowls without an S bend or ball terminal. Upright f retains the original ball terminal, moved right to meet a straight stem. Italic f uses the upright f head, proportioned to its stem and slanted at the original italic angle. Its complete original italic tail is retained, including the original rounded terminal; only its head is replaced. See scripts/refine_letters.py.
+Uppercase F and all other letters are rendered by the original Fraunces font.
+
+Source: https://github.com/google/fonts/tree/main/ofl/fraunces
+Source files: Fraunces[SOFT,WONK,opsz,wght].ttf and Fraunces-Italic[SOFT,WONK,opsz,wght].ttf
+Source settings: opsz=14, SOFT=0, WONK=1; weights 400, 500, 600, 700.
+License: SIL Open Font License 1.1; see Fraunces-OFL.txt.
+The derivative uses a distinct family name: Amicitia Letterforms.
+
+To regenerate: install fonttools[woff] and brotli, download the upstream TTFs
+as Fraunces.ttf and Fraunces-Italic.ttf alongside Fraunces-OFL.txt into a
+source directory, then run:
+  python scripts/refine_letters.py SOURCE_DIRECTORY public/fonts
+Copy SOURCE_DIRECTORY/letter-alternates.css into the app directory.
+SOURCE_DIRECTORY/refined-letters.svg provides a before/after outline proof.

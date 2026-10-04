@@ -1,0 +1,59 @@
+.scene {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 530px;
+  aspect-ratio: 530 / 540;
+  margin: 0 auto;
+}
+.glow {
+  position: absolute;
+  inset: 12% -3% 3%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #dfcdbb 0%, #e9ddcf66 42%, transparent 70%);
+}
+.phone {
+  position: absolute;
+  width: 36%;
+  padding: 1.2%;
+  border: 1px solid #61564c;
+  border-radius: 14% / 6.5%;
+  background: #2d2620;
+  box-shadow: 0 22px 34px -18px #35241980, inset 0 0 0 1px #ffffff20;
+}
+.phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 11% / 5%;
+}
+.left { top: 12%; left: 4%; transform: rotate(-11deg); }
+.right { top: 12%; right: 4%; transform: rotate(11deg); }
+.center { top: 7%; left: 29%; z-index: 2; width: 42%; transform: rotate(-2deg); }
+
+/* Reveal starts the sequence when the project card enters the viewport.
+   Both side phones begin at the same horizontal centre, behind the main one. */
+@media (prefers-reduced-motion: no-preference) {
+  :global(.is-visible) .center {
+    animation: main-phone-in 1s cubic-bezier(.16, 1, .3, 1) both;
+  }
+  :global(.is-visible) .left {
+    animation: left-phone-out 1.35s cubic-bezier(.16, 1, .3, 1) .45s both;
+  }
+  :global(.is-visible) .right {
+    animation: right-phone-out 1.35s cubic-bezier(.16, 1, .3, 1) .6s both;
+  }
+}
+
+@keyframes main-phone-in {
+  from { opacity: 0; transform: translateY(32px) rotate(3deg) scale(.9); }
+  to { opacity: 1; transform: translateY(0) rotate(-2deg) scale(1); }
+}
+@keyframes left-phone-out {
+  from { transform: translate(77.78%, -5%) rotate(-2deg) scale(.94); }
+  to { transform: translate(0, 0) rotate(-11deg) scale(1); }
+}
+@keyframes right-phone-out {
+  from { transform: translate(-77.78%, -5%) rotate(-2deg) scale(.94); }
+  to { transform: translate(0, 0) rotate(11deg) scale(1); }
+}
