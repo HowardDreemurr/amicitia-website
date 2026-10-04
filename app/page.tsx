@@ -7,17 +7,17 @@ const STEPS = [
   {
     n: "01",
     title: "Concept",
-    body: "We shape the idea with you — what it is, who it's for, and the smallest version worth shipping.",
+    body: "We shape the idea with you: what it is, who it's for, and the smallest version worth shipping.",
   },
   {
     n: "02",
     title: "Build",
-    body: "Design and engineering under one roof: interfaces, backends, maps, machine learning — whatever the product needs.",
+    body: "Design and engineering under one roof: interfaces, backends, maps, machine learning, whatever the product needs.",
   },
   {
     n: "03",
     title: "Completion",
-    body: "We ship it properly — app stores, launch, and the follow-through that keeps it alive after day one.",
+    body: "We ship it properly: app stores, launch, and the follow-through that keeps it alive after day one.",
   },
 ];
 
@@ -45,11 +45,11 @@ export default function Home() {
           Amicitia Limited · UK Software Studio
         </Reveal>
         <Reveal as="h1" className="hero-title" delay={60}>
-          We build things that do <span className="hl">good</span> — or are
+          We build things that do <span className="hl">good</span>, or are
           just plain <span className="hl">fun</span>.
         </Reveal>
         <Reveal as="p" className="hero-sub" delay={120}>
-          A UK studio that takes projects from first concept to completion —
+          A UK studio that takes projects from first concept to completion,
           as long as they make the world a little better, or a little more
           fun.
         </Reveal>
@@ -69,7 +69,7 @@ export default function Home() {
           Concept to completion
         </Reveal>
         <Reveal as="p" className="how-lead" delay={60}>
-          We don&apos;t specialise in a sector — we specialise in finishing.
+          We don&apos;t specialise in a sector. We specialise in finishing.
           If an idea does some good, or is simply good fun, we&apos;ll design
           it, build it, and ship it.
         </Reveal>

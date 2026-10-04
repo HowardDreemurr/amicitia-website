@@ -20,9 +20,9 @@ const body = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://amicitia.uk"),
-  title: "Amicitia — Software that does good, or is just plain fun",
+  title: "Amicitia | Software that does good, or is just plain fun",
   description:
-    "Amicitia Limited is a UK software studio that takes projects from concept to completion — building things that do good, or are just plain fun. Makers of Meow Map.",
+    "Amicitia Limited is a UK software studio that takes projects from concept to completion, building things that do good, or are just plain fun. Makers of Meow Map.",
   keywords: [
     "Amicitia",
     "Amicitia Limited",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "United Kingdom",
   ],
   openGraph: {
-    title: "Amicitia — Software that does good, or is just plain fun",
+    title: "Amicitia | Software that does good, or is just plain fun",
     description:
       "A UK software studio taking projects from concept to completion. Makers of Meow Map.",
     url: "https://amicitia.uk",
